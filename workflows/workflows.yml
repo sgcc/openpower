@@ -1,0 +1,8 @@
+name: openpower # 就是你问的这个地方
+on: [push]  # 触发条件：当有代码推送时运行
+jobs:
+  build:    # 定义一个任务
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Hello, world!"
